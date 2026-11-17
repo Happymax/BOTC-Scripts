@@ -1,0 +1,140 @@
+# This is a sample YAML file for BOTC scripts. If you're unsure what to write for a specific field, please refer to: https://github.com/ThePandemoniumInstitute/botc-release/blob/main/script-schema.json
+
+# Script Information
+- id: Example Script for BOTC
+  name: 血染钟楼 示例
+  author: happymax
+  logo: https://release.botc.app/resources/editions/custom/logo.webp
+
+# Townsfolk Roles
+- id: townsfolk1
+  name: 镇民1
+  edition: tf1
+  image: https://release.botc.app/resources/characters/generic/good.webp
+  team: townsfolk
+  firstNight: 0 # 0 = no action, num > 0 => action priority
+  firstNightReminder: 无动作
+  otherNight: 0
+  otherNightReminder: 无动作
+  reminders:
+    - 标记A
+    - 标记B
+  remindersGlobal:
+    - 标记C
+    - 标记D
+  setup: false # true if this role affects game setup
+  ability: 每局限一次，你可以在白天公开选择一名玩家，如果他是恶魔，他死亡。如果他是镇民，你死亡。
+
+# Outsider Roles
+- id: outsider1
+  name: 外来者1
+  edition: os1
+  image: https://release.botc.app/resources/characters/generic/outsider.webp
+  team: outsider
+  firstNight: 1 # 0 = no action, num > 0 => action priority
+  firstNightReminder: 无动作
+  otherNight: 1
+  otherNightReminder: 无动作
+  reminders:
+    - 标记A
+    - 标记B
+  remindersGlobal:
+    - 标记C
+    - 标记D
+  setup: false # true if this role affects game setup
+  ability: 每个夜晚，你可以选择一个邪恶角色。如果该角色在场，你变为邪恶阵营，该角色的玩家中毒。
+
+# Minion Roles
+- id: minion1
+  name: 爪牙1
+  edition: mn1
+  image: https://release.botc.app/resources/characters/generic/minion.webp
+  team: minion
+  firstNight: 2 # 0 = no action, num > 0 => action priority
+  firstNightReminder: 选择玩家
+  otherNight: 2
+  otherNightReminder: 选择玩家
+  reminders:
+    - 标记A
+    - 标记B
+  remindersGlobal:
+    - 标记C
+    - 标记D
+  setup: false # true if this role affects game setup
+  ability: 每个夜晚，你要选择一个玩家：他在下个白天和夜晚要疯狂地证明自己是外来者。
+
+# Demon Roles
+- id: demon1
+  name: 恶魔1
+  edition: dm1
+  image: https://release.botc.app/resources/characters/generic/demon.webp
+  team: demon
+  firstNight: 0 # 0 = no action, num > 0 => action priority
+  firstNightReminder: 选择玩家
+  otherNight: 3
+  otherNightReminder: 选择玩家
+  reminders:
+    - 标记A
+    - 标记B
+  remindersGlobal:
+    - 标记C
+    - 标记D
+  setup: false # true if this role affects game setup
+  ability: 每个夜晚*，你要选择一个玩家：他死亡。他顺时针方向的玩家中毒，持续到选择下一个玩家。
+
+# Traveler Roles
+- id: traveler1
+  name: 旅行者1
+  edition: tv1
+  image: https://release.botc.app/resources/characters/generic/traveler.webp
+  team: traveler
+  firstNight: 0 # 0 = no action, num > 0 => action priority
+  firstNightReminder: 无动作
+  otherNight: 0
+  otherNightReminder: 无动作
+  reminders:
+    - 标记A
+    - 标记B
+  remindersGlobal:
+    - 标记C
+    - 标记D
+  setup: false # true if this role affects game setup
+  ability: 你可以额外多发起一次提名。在此次提名中，玩家投票不消耗投票次数（包括死亡玩家）。
+
+# Fable Roles
+- id: fable1
+  name: 传奇1
+  edition: fb1
+  image: https://release.botc.app/resources/characters/generic/fable.webp
+  team: fable
+  firstNight: 0 # 0 = no action, num > 0 => action priority
+  firstNightReminder: 无动作
+  otherNight: 0
+  otherNightReminder: 无动作
+  reminders:
+    - 标记A
+    - 标记B
+  remindersGlobal:
+    - 标记C
+    - 标记D
+  setup: false # true if this role affects game setup
+  ability: 每个白天，你可以公开选择一个玩家：他的角色在下个夜晚被你变为同阵营的另一个角色。
+
+# Loric Roles
+- id: loric1
+  name: 奇遇1
+  edition: lc1
+  image: https://release.botc.app/resources/characters/generic/loric.webp
+  team: loric
+  firstNight: 0 # 0 = no action, num > 0 => action priority
+  firstNightReminder: 无动作
+  otherNight: 0
+  otherNightReminder: 无动作
+  reminders:
+    - 标记A
+    - 标记B
+  remindersGlobal:
+    - 标记C
+    - 标记D
+  setup: false # true if this role affects game setup
+  ability: 每个白天，你可以公开选择一个玩家：他要疯狂地指认一名玩家为恶魔，并阐述理由。
